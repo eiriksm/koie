@@ -9,26 +9,29 @@
   const two = () => {
       document.querySelector('.second').style.display = 'none'
       document.querySelector('.third').style.display = 'block'
-    }
+  }
   const one = () => {
       document.querySelector('.second').style.display = 'block'
       document.querySelector('.first').style.display = 'none'
-    }
+  }
 </script>
 <body>
   <div class="first">
-  <h1 class="text-3xl font-bold h-screen flex items-center justify-center" onclick="one()">
-    メリークリスマス
-  </h1></div>
+    <h1 class="text-3xl font-bold h-screen flex items-center justify-center">
+    メ<span onclick="one()">リ</span>ークリスマス
+    </h1>
+  </div>
   <div class="second hidden">
-    <h1 class="text-3xl font-bold h-screen flex items-center justify-center" onclick="two()">
-    来家拉麺
+    <h1 class="text-3xl font-bold h-screen flex items-center justify-center">
+      来家拉<span onclick="two()">麺</span>
     </h1>
   </div>
   <div class="third hidden">
-    <h1 class="text-3xl font-bold block  h-screen flex items-center justify-center"><a href="https://koieramen.no/" target="_blank">
-      <img src="Koie_0919_0317.jpg"/>
-    </a> </h1>
+    <h1 class="text-3xl font-bold block  h-screen flex items-center justify-center">
+      <a href="https://koieramen.no/" target="_blank">
+        <img src="Koie_0919_0317.jpg"/>
+      </a>
+    </h1>
   </div>
 </body>
 </html>
